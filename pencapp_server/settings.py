@@ -26,7 +26,7 @@ SECRET_KEY = '3i5xrg5rci-imtzc=#tpg^wpzfq$gr0@_e$-7ry17^i_fu$twa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pencapp-server.herokuapp.com']
+ALLOWED_HOSTS = ['pencapp-server.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     'pencapp.apps.PencappConfig',
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
