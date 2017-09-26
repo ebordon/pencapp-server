@@ -26,7 +26,7 @@ SECRET_KEY = '3i5xrg5rci-imtzc=#tpg^wpzfq$gr0@_e$-7ry17^i_fu$twa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pencapp-server.herokuapp.com']
 
 
 # Application definition
